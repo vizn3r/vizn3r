@@ -1,4 +1,9 @@
-# Hello, it's me, vizn3r!
+<h1 style="text-align:center">vizn3r</h1>
 
-![vizn3r's Stats](https://github-readme-stats.vercel.app/api?username=vizn3r&theme=highcontrast&show_icons=true&hide_border=true&count_private=true)
-![vizn3r's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vizn3r&theme=highcontrast&show_icons=true&hide_border=true&layout=compact)
+<div style="list-style: none; text-align:center">
+<li>what</li>
+<li>are</li>
+<li>you</li>
+<li>doing</li>
+<li>here</li>
+</div>
