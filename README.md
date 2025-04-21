@@ -3,6 +3,7 @@
 <h3 align="center">🐞 Embedded / 💻 Backend developer</h3>
 
 <h1 align="left">My tech stack</h1>
+<h3 align="center">Software</h3>
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" width="42" height="30" alt="Go"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="42" height="30" alt="C"/>
@@ -39,40 +40,40 @@
   <img src="https://bun.sh/logo.svg" width="42" height="30" alt="Bun"/>
 </p>
 
-
 <h1>Projects</h1>
+<div align="center">
 <h3>Current</h3>
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Micromouse">🐀 MicroMouse</a> (<a href="https://github.com/SDU-Robotics-Club">🦾 SDU Robotics Club</a>)</li>
-  <li><a href="https://energyboatchallenge.com/">🚤 Monaco Energy Boat Challenge</a> - Energy Class (<a href="https://github.com/SDU-Krakens">🦑 SDU Krakens Club</a>)</li>
-  <li>🔏 Private projects (WIP)</li>
-</ul>
+  <p><a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank">🐀 MicroMouse</a> (<a href="https://github.com/SDU-Robotics-Club" target="_blank">🦾 SDU Robotics Club</a>)</p>
+  <p><a href="https://energyboatchallenge.com/" target="_blank">🚤 Monaco Energy Boat Challenge</a> - Energy Class (<a href="https://github.com/SDU-Krakens" target="_blank">🦑 SDU Krakens Club</a>)</p>
+  <p>🔏 Private projects (WIP)</p>
 <h3>SDU Semester Projects</h3>
-<ul>
-  <li>1st Semester Project: Car that would go a set distance in a set time</li>
-  <li>[Current] 2nd Semester Project: Custom solution for a servo motor and a device where we use it</li>
-</ul>
+  <p>1st Semester Project: Car that would go a set distance in a set time</p>
+  <p>[Current] 2nd Semester Project: Custom solution for a servo motor and a device where we use it</p>
 <h3>Past (mostly competitions)</h3>
-<ul>
-  <li>Small 6 DOF Robotic Arm (High School Graduation Project)</li>
-  <li><a href="https://ecer.pria.at/">ECER</a> 2022/23 (4th/2nd place)</li>
-  <li><a href="https://road2fei.sk/">Road 2 FEI</a> 2023 (3rd place)</li>
-  <li><a href="https://robotickybattle.sk/">Robotic Battle at Alejova</a> - Racing 2023 (5th place)</li>
-</ul>
+  <p>Small 6 DOF Robotic Arm (High School Graduation Project)</p>
+  <p><a href="https://ecer.pria.at/" target="_blank">ECER</a> 2022/23 (4th/2nd place)</p>
+  <p><a href="https://road2fei.sk/" target="_blank">Road 2 FEI</a> 2023 (3rd place)</p>
+  <p><a href="https://robotickybattle.sk/" target="_blank">Robotic Battle at Alejova</a> - Racing 2023 (5th place)</p>
+</div>
 
 <h1>Stats</h1>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=vizn3r&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&card_width=500"/></br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vizn3r&layout=normal&theme=tokyonight&hide_border=true&card_width=500"/>
+</p>
 
-![Šimon's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vizn3r&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&card_width=500)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vizn3r&layout=normal&theme=tokyonight&hide_border=true&card_width=500)
-
-<h1 align="left">Socials</h1>
-<p align="left">
-<a href="https://linkedin.com/in/simon-vizner">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="42" height="30" alt="LinkedIn"/>
-</a>
-<a href="https://github.com/vizn3r">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="42" height="30" alt="GitHub"/>
-</a></br>
-Discord: <code>vizn3r</code>
+<h1>Socials</h1>
+<p align="center">
+  <a href="https://github.com/vizn3r" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-vizn3r-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://linkedin.com/in/simon-vizner" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-simon--vizner-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://discord.com/users/828356379071741992" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-vizn3r-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/vizn3r" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-vizn3r-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
 </p>
