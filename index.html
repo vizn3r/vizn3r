@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simon Vizner</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Configure marked to sanitize HTML output
+        marked.setOptions({
+          sanitize: true,
+          breaks: true,
+          baseUrl: "https://github.com/vizn3r/vizn3r/raw/main/",
+        });
+
+        const username = "vizn3r";
+
+        fetch(`https://api.github.com/repos/${username}/${username}/readme`, {
+          headers: {
+            Accept: "application/vnd.github.v3+json",
+          },
+        })
+          .then((response) => {
+            if (!response.ok) throw new Error("Failed to fetch README");
+            return response.json();
+          })
+          .then((data) => {
+            if (!data.content) throw new Error("No content found");
+
+            // Proper base64 decoding with UTF-8 handling
+            const rawContent = atob(data.content.replace(/\s/g, ""));
+            const bytes = new Uint8Array(rawContent.length);
+            for (let i = 0; i < rawContent.length; i++) {
+              bytes[i] = rawContent.charCodeAt(i);
+            }
+            const decodedContent = new TextDecoder().decode(bytes);
+
+            // Convert markdown to HTML
+            const htmlContent = marked.parse(decodedContent);
+
+            document.getElementById("readme-body").innerHTML = htmlContent;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("readme-body").innerHTML =
+              `<p>Error loading content: ${error.message}</p>`;
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="readme-body"></div>
+  </body>
+</html>
