@@ -69,7 +69,7 @@
 
 <h3>📚 SDU Semester Projects</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/%231%20Semester%20Project%3A%20Timed%20Car-lightgrey?style=for-the-badge" alt="1st Semester Project: Timed Car" />
+  <img src="https://img.shields.io/badge/1st%20Semester%20Project%3A%20Timed%20Car-lightgrey?style=for-the-badge" alt="1st Semester Project: Timed Car" />
   <a href="https://github.com/vizn3r/spro2">
     <img src="https://img.shields.io/badge/2nd%20Semester%20Project%3A%20Split%20Flop%20Display%20Clock-lightblue?style=for-the-badge" alt="2nd Semester Project: Split Flop Display Clock" />
   </a>
