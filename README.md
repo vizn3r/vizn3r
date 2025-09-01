@@ -1,6 +1,6 @@
 <h1>👋 Hi, I'm Šimon Vizner</h1>
 <h3>🛠 Wannabe engineer</h3>
-<h4>🎓 SDU Sønderborg (1st year, BEng in Mechatronics)</h4>
+<h4>🎓 SDU Sønderborg (2nd year, BEng in Mechatronics)</h4>
 <h4>🐞 Embedded / 💻 Backend developer</h4>
 <h4>🎯 Interests: Robotics, Embedded Systems, Distributed Systems, AI, Open Source, Beer 🍺</h4>
 
@@ -49,9 +49,6 @@
 <h1>🛠️ Projects</h1>
 <h3>🎯 Current</h3>
 <p align="center">
-  <a href="https://maxwell.vizn3r.eu" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB%20Maxwell-9f00ff?style=for-the-badge&logo=OpenAI&logoColor=white" alt="Maxwell" />
-  </a>
   <a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%90%80%20MicroMouse-grey?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="MicroMouse" />
   </a>
