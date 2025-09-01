@@ -91,7 +91,6 @@
 <h1>📊 Stats</h1>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=vizn3r&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&card_width=500"/></br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vizn3r&layout=normal&theme=tokyonight&hide_border=true&card_width=500"/>
 </p>
 
 </br>
