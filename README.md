@@ -6,19 +6,15 @@
 <h1>Projects</h1>
 <h3>Current</h3>
 <p align="center">
-  <a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%90%80%20MicroMouse-grey?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="MicroMouse" />
-  </a>
   <a href="https://github.com/SDU-Robotics-Club" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%A6%BE%20SDU%20Robotics%20Club-blue?style=for-the-badge&logo=github" alt="SDU Robotics Club" />
+    <img src="https://img.shields.io/badge/%F0%9F%90%80%20MicroMouse-grey?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="MicroMouse" />
   </a>
   <a href="https://energyboatchallenge.com/" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%9A%A4%20Monaco%20Energy%20Boat%20Challenge-darkgreen?style=for-the-badge&logo=leaflet&logoColor=white" alt="Monaco Energy Boat Challenge" />
   </a>
-  <a href="https://github.com/SDU-Krakens" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%A6%91%20SDU%20Krakens-blue?style=for-the-badge&logo=github" alt="SDU Krakens" />
+  <a href="https://github.com/vizn3r/cloud">
+    <img src="https://img.shields.io/badge/%F0%9F%90%80%20cloud%20storage%20thingy-grey?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="cloud storage thingy" />
   </a>
-  <img src="https://img.shields.io/badge/%F0%9F%94%8F%20Private%20Projects-orange?style=for-the-badge" alt="Private Projects" />
 </p>
 
 <h3>Past Projects & Competitions</h3>
