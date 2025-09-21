@@ -21,16 +21,12 @@
   <img src="https://img.shields.io/badge/%F0%9F%94%8F%20Private%20Projects-orange?style=for-the-badge" alt="Private Projects" />
 </p>
 
-<h3>SDU Semester Projects</h3>
+<h3>Past Projects & Competitions</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/1st%20Sem.%20Project%3A%20Timed%20Car-lightgrey?style=for-the-badge" alt="1st Semester Project: Timed Car" />
   <a href="https://github.com/vizn3r/spro2">
     <img src="https://img.shields.io/badge/2nd%20Sem.%20Project%3A%20Split%20Flop%20Display%20Clock-lightblue?style=for-the-badge" alt="2nd Semester Project: Split Flop Display Clock" />
   </a>
-</p>
-
-<h3>Past Projects & Competitions</h3>
-<p align="center">
   <img src="https://img.shields.io/badge/Robotic%20Arm%20(H.S%20Grad%20Project)-purple?style=for-the-badge" alt="Robotic Arm (H. S. Grad Project)" />
   <a href="https://ecer.pria.at/" target="_blank">
     <img src="https://img.shields.io/badge/ECER%202022%2F23-4th%2F2nd_place-blueviolet?style=for-the-badge" alt="ECER 2022/23" />
