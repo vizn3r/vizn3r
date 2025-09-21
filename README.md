@@ -93,7 +93,4 @@
   <a href="mailto:simon.vizner@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-simon.vizner%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="mailto:me@vizn3r.eu" target="_blank">
-    <img src="https://img.shields.io/badge/Email-me%40vizn3r.eu-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
 </p>
