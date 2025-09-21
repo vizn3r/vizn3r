@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/%F0%9F%9A%A4%20Monaco%20Energy%20Boat%20Challenge-darkgreen?style=for-the-badge&logo=leaflet&logoColor=white" alt="Monaco Energy Boat Challenge" />
   </a>
   <a href="https://github.com/vizn3r/cloud">
-    <img src="https://img.shields.io/badge/%F0%9F%90%80%20cloud%20storage%20thingy-blue?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="cloud storage thingy" />
+    <img src="https://img.shields.io/badge/%F0%9F%90%80%20cloud%20storage%20thingy-lightblue?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="cloud storage thingy" />
   </a>
 </p>
 
