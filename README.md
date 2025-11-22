@@ -9,7 +9,7 @@
   <a href="https://github.com/SDU-Robotics-Club" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%90%80%20MicroMouse-grey?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="MicroMouse" />
   </a>
-  <a href="https://energyboatchallenge.com/" target="_blank">
+  <a href="https://github.com/SDU-Krakens" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%9A%A4%20Monaco%20Energy%20Boat%20Challenge-darkgreen?style=for-the-badge&logo=leaflet&logoColor=white" alt="Monaco Energy Boat Challenge" />
   </a>
 </p>
