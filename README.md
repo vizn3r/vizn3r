@@ -1,5 +1,5 @@
 <h1>Šimon Vizner</h1>
-<h4>SDU Sønderborg (2nd year, BEng in Mechatronics)</h4>
+<h4>SDU Sønderborg (3rd year, BEng in Mechatronics)</h4>
 
 </br>
 
