@@ -15,7 +15,7 @@ let content = marked.parse(markdown, { breaks: true });
 log(`markdown rendered, ${Buffer.byteLength(content)} bytes of HTML`);
 
 // Print-only line with the site URL, right under the first <h4> (the school line)
-const siteLine = '<p class="print-only"><a href="https://vizn3r.eu">https://vizn3r.eu</a></p>';
+const siteLine = '<p class="print-only">Portfolio website: <a href="https://vizn3r.eu">https://vizn3r.eu</a></p>';
 log("adding the print-only vizn3r.eu line ...");
 const h4End = content.indexOf("</h4>");
 if (h4End === -1) {
