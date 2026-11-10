@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šimon Vizner</title>
+    <meta name="description" content="Šimon Vizner: mechatronics student at SDU Sønderborg. Embedded firmware, robotics and electronics projects.">
+    <link rel="canonical" href="https://vizn3r.eu/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vizn3r.eu/">
+    <meta property="og:title" content="Šimon Vizner">
+    <meta property="og:description" content="Šimon Vizner: mechatronics student at SDU Sønderborg. Embedded firmware, robotics and electronics projects.">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function createEmoji() {
+        const emojis = ['🤖', '👾', '🐱', '⚙', '🍺', '💻', '🎓', '🛠', '🐞'];
+        const container = document.querySelector('.emoji-background');
+        const emoji = document.createElement('div');
+
+        const duration = Math.random() * 10 + 5;
+        emoji.style.left = Math.random() * 100 + '%';
+        emoji.style.animationDuration = duration + 's';
+        emoji.style.animationDelay = Math.random() * 2 + 's';
+        emoji.style.opacity = Math.random();
+        emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+        container.appendChild(emoji);
+
+        // Remove emoji after animation
+        setTimeout(() => emoji.remove(), duration * 1000);
+      }
+
+      // Create emojis periodically
+      setInterval(createEmoji, 750);
+    </script>
+  </head>
+  <body>
+    <div class="emoji-background"></div>
+    <div id="readme-body">{{content}}</div>
+  </body>
+</html>

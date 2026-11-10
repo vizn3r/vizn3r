@@ -1,0 +1,12 @@
+{
+  "name": "vizn3r-eu",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "marked": "18.2.0",
+    "wrangler": "4.159.0"
+  }
+}
