@@ -11,8 +11,21 @@ const markdown = await readFile(here("../README.md"), "utf8");
 log(`README.md read, ${Buffer.byteLength(markdown)} bytes`);
 
 log("rendering markdown with marked ...");
-const content = marked.parse(markdown, { breaks: true });
+let content = marked.parse(markdown, { breaks: true });
 log(`markdown rendered, ${Buffer.byteLength(content)} bytes of HTML`);
+
+// Print-only line with the site URL, right under the first <h4> (the school line)
+const siteLine = '<p class="print-only"><a href="https://vizn3r.eu">https://vizn3r.eu</a></p>';
+log("adding the print-only vizn3r.eu line ...");
+const h4End = content.indexOf("</h4>");
+if (h4End === -1) {
+  content = siteLine + content;
+  log("no </h4> found, vizn3r.eu line added at the top");
+} else {
+  const at = h4End + "</h4>".length;
+  content = content.slice(0, at) + siteLine + content.slice(at);
+  log("vizn3r.eu line added under the first <h4>");
+}
 
 log("reading template.html ...");
 const template = await readFile(here("./template.html"), "utf8");
