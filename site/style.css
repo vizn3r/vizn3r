@@ -272,6 +272,13 @@ em {
     overflow: visible;
   }
 
+  /* In table cells, put each link URL on its own small line */
+  #readme-body td a[href^="http"]:not(:has(img))::after {
+    content: attr(href);
+    display: block;
+    font-size: 0.8em;
+  }
+
   tr,
   tr:nth-child(even) {
     background: #fff !important;
