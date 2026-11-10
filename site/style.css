@@ -240,8 +240,28 @@ em {
     border-bottom-color: #ccc;
   }
 
-  h3, h4 {
+  h1, h2, h3, h4 {
     break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep each section heading on the same page as what follows it:
+     the invisible 8em block makes a heading near the page bottom move to the next page */
+  #readme-body > h3::after {
+    content: "";
+    display: block;
+    height: 8em;
+    margin-bottom: -8em;
+  }
+
+  #readme-body > h3 + * {
+    break-before: avoid;
+  }
+
+  /* Badge rows (Current, Competitions, Socials) stay in one piece */
+  #readme-body > p[align="center"] {
+    break-inside: avoid;
   }
 
   em, i {
