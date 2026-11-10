@@ -75,13 +75,13 @@
 | computah | OS project for the i.MX6; tooling that turns the reference manual into register headers | private repo |
 | MicroMouse maze generator | GUI and CLI that generate mazes and check them against the MicroMouse rules | private repo |
 
-<h3>Past Projects & Competitions</h3>
+<h3>Competitions</h3>
 <p align="center">
-  <a href="https://github.com/vizn3r/eve-firmware" target="_blank">
-    <img src="https://img.shields.io/badge/Robotic%20Arm%20(H.S%20Grad%20Project)-purple?style=for-the-badge" alt="Robotic Arm (H. S. Grad Project)" />
+  <a href="https://ecer.pria.at/" target="_blank">
+    <img src="https://img.shields.io/badge/ECER%202022-4th_place-blueviolet?style=for-the-badge" alt="ECER 2022" />
   </a>
   <a href="https://ecer.pria.at/" target="_blank">
-    <img src="https://img.shields.io/badge/ECER%202022%2F23-4th%2F2nd_place-blueviolet?style=for-the-badge" alt="ECER 2022/23" />
+    <img src="https://img.shields.io/badge/ECER%202023-2nd_place-blueviolet?style=for-the-badge" alt="ECER 2023" />
   </a>
   <a href="https://road2fei.sk/" target="_blank">
     <img src="https://img.shields.io/badge/Road%202%20FEI%202023-3rd_place-red?style=for-the-badge" alt="Road 2 FEI 2023" />
