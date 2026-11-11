@@ -195,11 +195,12 @@ img {
 hr {
   box-sizing: content-box;
   overflow: hidden;
-  height: 0.25em;
+  height: 0;
   padding: 0;
   margin: 1.5rem 0;
-  background-color: #b7bdc8;
+  background-color: transparent;
   border: 0;
+  border-bottom: 1px solid #b7bdc8;
 }
 
 ul,
