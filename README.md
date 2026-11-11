@@ -5,8 +5,6 @@
 
 ### Projects
 
----
-
 <div>
 
 #### Monaco boat telemetry (SDU Krakens)
