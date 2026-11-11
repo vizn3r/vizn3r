@@ -73,8 +73,8 @@
 
 | Project | What it is | When | Repo |
 |---|---|---|---|
-| SPRO2 split-flap clock | ESP32-C3 main controller (ESP-IDF, FreeRTOS, NTP, weather API, Nextion display) and ATmega32u4 motor nodes on I2C with my own register protocol | Dec 2025 | [spro2](https://github.com/vizn3r/spro2) |
 | SPRO1 timed car + Nextion library | ATmega328p car that drives set distances in set times, with an encoder and PID speed control; display library for Nextion screens | Dec 2024 | [spro1](https://github.com/vizn3r/spro1), [avr-libnextion](https://github.com/vizn3r/avr-libnextion) |
+| SPRO2 split-flap clock | ESP32-C3 main controller (ESP-IDF, FreeRTOS, NTP, weather API, Nextion display) and ATmega32u4 motor nodes on I2C with my own register protocol | Dec 2025 | [spro2](https://github.com/vizn3r/spro2) |
 | Line follower PCB | My own line-follower PCB in two motor-driver versions (L298P, TC78H621FNG) | Jul 2022 | private repo |
 | computah | OS project for the i.MX6; tooling that turns the reference manual into register headers | Dec 2025 | private repo |
 | MicroMouse maze generator | GUI and CLI that generate mazes and check them against the MicroMouse rules | Mar 2026 | private repo |
