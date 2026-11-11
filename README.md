@@ -1,17 +1,7 @@
 <h1>Šimon Vizner</h1>
-<h4>SDU Sønderborg (3rd year, BEng in Mechatronics)</h4>
+<h4>SDU Sønderborg - BEng in Mechatronics - 5th semester</h4>
 
 </br>
-
-<h3>Current</h3>
-<p align="center">
-  <a href="https://github.com/SDU-Robotics-Club" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%90%80%20MicroMouse-grey?style=for-the-badge" alt="MicroMouse" />
-  </a>
-  <a href="https://github.com/SDU-Krakens" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%9A%A4%20Monaco%20Energy%20Boat%20Challenge-darkgreen?style=for-the-badge" alt="Monaco Energy Boat Challenge" />
-  </a>
-</p>
 
 <h3>Projects</h3>
 
@@ -87,6 +77,9 @@
 <h4>NumaSync</h4>
 <p><i>Oct 2025</i></p>
 <p>Privacy-first cloud storage with peer-to-peer file transfer. Files are encrypted on the client, and the server only coordinates.</p>
+  
+> This was just a big idea turning into a too big of a project for me to handle and develop myself, so now it remains just as a concept.
+
 <ul>
 <li>My own UDP transfer protocol, specified before implementation: 20-byte header with CRC32, three-way handshake, version negotiation, keepalive</li>
 <li>Reliability over UDP: sliding window of 8 packets, bitmap ACKs, immediate NACKs for gaps, and retransmit after 500 ms</li>
