@@ -5,6 +5,8 @@
 
 ### Projects
 
+---
+
 <div>
 
 #### Monaco boat telemetry (SDU Krakens)
@@ -142,6 +144,8 @@ Firmware and control client for a robotic arm driven by a Raspberry Pi, written 
 <a href="https://github.com/vizn3r/eve-firmware" target="_blank">eve-firmware</a>, <a href="https://github.com/vizn3r/eve-client" target="_blank">eve-client</a>
 
 </div>
+
+---
 
 ### Other projects
 
