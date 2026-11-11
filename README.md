@@ -25,6 +25,7 @@
 <li>Zero drivers: SX1278 LoRa radio on SPI, GPIO through the character device, log files, and a scheduler that alternates between telemetry and log lines on LoRa</li>
 <li>The Zero programs the Pico through SWD. CI builds each release. One command sets up a new Zero</li>
 <li>Ground station: an ESP32-S3 that receives LoRa and bridges USB (CDC + NCM) and a Wi-Fi access point (private repo)</li>
+<li>Shore dashboard (team project) that shows the telemetry live on a map in the browser. I ported it to Linux and added automatic platform detection</li>
 </ul>
 <p><a href="https://github.com/SDU-Krakens/rc-boat" target="_blank">Repository</a></p>
 </div>
@@ -39,6 +40,19 @@
 <li>Shard manager that scales with the number of servers. PostgreSQL through pgx. OpenAI-compatible LLM client for tool calls</li>
 <li>Intent and category classifier with SetFit and GLiNER</li>
 <li>Integration tests with a mock LLM</li>
+</ul>
+<p><i>Private repository</i></p>
+</div>
+
+<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
+<h4>chengine</h4>
+<p><i>Current</i></p>
+<p>Chess engine that plays like a human: a transformer that predicts the move a player of a given rating would make, how long they would think, and how the game ends.</p>
+<ul>
+<li>Model: a transformer over 64 square tokens, 11 metadata tokens (ratings, clocks, castling, en passant) and the last moves with their think times. It outputs move probabilities with illegal moves masked, a think time, and win/draw/loss</li>
+<li>Dataset pipeline in Go with my own board, move generator and PGN/SAN parser. It turns Lichess game databases into sharded binary training data with parallel workers and resume</li>
+<li>Training on Modal GPUs, with experiment tracking in Aim on my own server over Tailscale, a learning-rate finder, and model upload to Hugging Face</li>
+<li>A UCI engine that plays the trained model, and an evaluation where two engines play on a real clock in the browser with every move classified</li>
 </ul>
 <p><i>Private repository</i></p>
 </div>
@@ -69,6 +83,34 @@
 <p><a href="https://github.com/vizn3r/pico-bare-bones" target="_blank">Repository</a></p>
 </div>
 
+<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
+<h4>NumaSync</h4>
+<p><i>Oct 2025</i></p>
+<p>Privacy-first cloud storage with peer-to-peer file transfer. Files are encrypted on the client, and the server only coordinates.</p>
+<ul>
+<li>My own UDP transfer protocol, specified before implementation: 20-byte header with CRC32, three-way handshake, version negotiation, keepalive</li>
+<li>Reliability over UDP: sliding window of 8 packets, bitmap ACKs, immediate NACKs for gaps, and retransmit after 500 ms</li>
+<li>Designed so that a central server assigns sessions and sets up P2P hole-punching between client and storage daemons without seeing file contents</li>
+<li>Implemented so far: the transfer library in Go (sender, receiver, packet handling) with benchmarks</li>
+<li>Earlier version: a Go HTTP server with user accounts, chunked upload and share links</li>
+</ul>
+<p><i>Private repositories</i></p>
+</div>
+
+<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
+<h4>Robotic arm EVE (high school thesis)</h4>
+<p><i>Mar 2024</i></p>
+<p>Firmware and control client for a robotic arm driven by a Raspberry Pi, written in Go.</p>
+<ul>
+<li>Forward kinematics from a Denavit-Hartenberg table, using my own matrix library</li>
+<li>Stepper motors driven through step and direction pins on Linux GPIO (sysfs), microstepping modes set through shift registers, plus servo control</li>
+<li>My own command format (letter, index, arguments) and a small script format with variables, conditions, jumps and delays, for running motion sequences from files</li>
+<li>Control over HTTP and WebSocket. Runs as a systemd service</li>
+<li>Terminal client: menus, driving the arm with a game controller or keyboard over WebSocket, and uploading files to the arm</li>
+</ul>
+<p><a href="https://github.com/vizn3r/eve-firmware" target="_blank">eve-firmware</a>, <a href="https://github.com/vizn3r/eve-client" target="_blank">eve-client</a></p>
+</div>
+
 <h3>Other projects</h3>
 
 | Project | What it is | When | Repo |
@@ -78,6 +120,9 @@
 | Line follower PCB | My own line-follower PCB in two motor-driver versions (L298P, TC78H621FNG) | Jul 2022 | private repo |
 | computah | OS project for the i.MX6; tooling that turns the reference manual into register headers | Dec 2025 | private repo |
 | MicroMouse maze generator | GUI and CLI that generate mazes and check them against the MicroMouse rules | Mar 2026 | private repo |
+| go-lib | My shared Go modules: a logger and a config loader, used in my other Go projects | Current | [go-lib](https://github.com/vizn3r/go-lib) |
+| Terminal poker | Poker game in C with my own terminal UI: raw-mode input, resize handling, menus | Feb 2026 | [poker-thingy](https://github.com/vizn3r/poker-thingy) |
+| Sorting visualizer | C program that draws bubble, insertion and merge sort in the terminal step by step | Mar 2025 | [sorting-visualizer](https://github.com/vizn3r/sorting-visualizer) |
 
 <h3>Competitions</h3>
 <p align="center">
