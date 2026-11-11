@@ -280,10 +280,8 @@ em {
     word-break: break-all;
   }
 
-  /* Project cards: override the inline dark style */
-  #readme-body div[style] {
-    background: #fff !important;
-    border: 1px solid #ccc !important;
+  /* Projects: each blank <div> stays on one page */
+  #readme-body > div {
     break-inside: avoid;
   }
 

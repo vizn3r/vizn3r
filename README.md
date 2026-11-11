@@ -1,123 +1,162 @@
-<h1>Šimon Vizner</h1>
-<h4>SDU Sønderborg - BEng in Mechatronics - 5th semester</h4>
+# Šimon Vizner
+#### SDU Sønderborg - BEng in Mechatronics - 5th semester
 
 </br>
 
-<h3>Projects</h3>
+### Projects
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>Monaco boat telemetry (SDU Krakens)</h4>
-<p><i>Current</i></p>
-<p>Sensor and telemetry system for our Monaco Energy Boat Challenge boat. A Raspberry Pi Pico 2 W reads the sensors, and a Pi Zero 2 W logs all data and sends it to shore over LoRa.</p>
-<ul>
-<li>Pico drivers: two IMUs on I2C (BNO055 and ICM-20948, detected at start, Madgwick filter), u-blox GPS on UART (UBX protocol), CAN bus on PIO (can2040)</li>
-<li>Pico-to-Zero link of my own design: framed UART at 921600 baud with CRC-16, a counter for each message type, and log lines that are acknowledged and sent again if lost</li>
-<li>Zero drivers: SX1278 LoRa radio on SPI, GPIO through the character device, log files, and a scheduler that alternates between telemetry and log lines on LoRa</li>
-<li>The Zero programs the Pico through SWD. CI builds each release. One command sets up a new Zero</li>
-<li>Ground station: an ESP32-S3 that receives LoRa and bridges USB (CDC + NCM) and a Wi-Fi access point (private repo)</li>
-<li>Shore dashboard (team project) that shows the telemetry live on a map in the browser. I ported it to Linux and added automatic platform detection</li>
-</ul>
-<p><a href="https://github.com/SDU-Krakens/rc-boat" target="_blank">Repository</a></p>
+<div>
+
+#### Monaco boat telemetry (SDU Krakens)
+
+*Current*
+
+Sensor and telemetry system for our Monaco Energy Boat Challenge boat. A Raspberry Pi Pico 2 W reads the sensors, and a Pi Zero 2 W logs all data and sends it to shore over LoRa.
+
+- Pico drivers: two IMUs on I2C (BNO055 and ICM-20948, detected at start, Madgwick filter), u-blox GPS on UART (UBX protocol), CAN bus on PIO (can2040)
+- Pico-to-Zero link of my own design: framed UART at 921600 baud with CRC-16, a counter for each message type, and log lines that are acknowledged and sent again if lost
+- Zero drivers: SX1278 LoRa radio on SPI, GPIO through the character device, log files, and a scheduler that alternates between telemetry and log lines on LoRa
+- The Zero programs the Pico through SWD. CI builds each release. One command sets up a new Zero
+- Ground station: an ESP32-S3 that receives LoRa and bridges USB (CDC + NCM) and a Wi-Fi access point (private repo)
+- Shore dashboard (team project) that shows the telemetry live on a map in the browser. I ported it to Linux and added automatic platform detection
+
+<a href="https://github.com/SDU-Krakens/rc-boat" target="_blank">Repository</a>
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>Maxwell</h4>
-<p><i>Current</i></p>
-<p>Discord moderation bot with AI features, built on my own workflow engine.</p>
-<ul>
-<li>Commands and events are DAG workflows. They are compiled once and run on preallocated execution frames, with no allocations for each run</li>
-<li>Node types for Discord triggers, logic, database, HTTP, JSON, roles, reactions, embeds, buttons, modals and scheduled triggers</li>
-<li>Shard manager that scales with the number of servers. PostgreSQL through pgx. OpenAI-compatible LLM client for tool calls</li>
-<li>Intent and category classifier with SetFit and GLiNER</li>
-<li>Integration tests with a mock LLM</li>
-</ul>
-<p><i>Private repository</i></p>
+---
+
+<div>
+
+#### Maxwell
+
+*Current*
+
+Discord moderation bot with AI features, built on my own workflow engine.
+
+- Commands and events are DAG workflows. They are compiled once and run on preallocated execution frames, with no allocations for each run
+- Node types for Discord triggers, logic, database, HTTP, JSON, roles, reactions, embeds, buttons, modals and scheduled triggers
+- Shard manager that scales with the number of servers. PostgreSQL through pgx. OpenAI-compatible LLM client for tool calls
+- Intent and category classifier with SetFit and GLiNER
+- Integration tests with a mock LLM
+
+*Private repository*
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>chengine</h4>
-<p><i>Current</i></p>
-<p>Chess engine that plays like a human: a transformer that predicts the move a player of a given rating would make, how long they would think, and how the game ends.</p>
-<ul>
-<li>Model: a transformer over 64 square tokens, 11 metadata tokens (ratings, clocks, castling, en passant) and the last moves with their think times. It outputs move probabilities with illegal moves masked, a think time, and win/draw/loss</li>
-<li>Dataset pipeline in Go with my own board, move generator and PGN/SAN parser. It turns Lichess game databases into sharded binary training data with parallel workers and resume</li>
-<li>Training on Modal GPUs, with experiment tracking in Aim on my own server over Tailscale, a learning-rate finder, and model upload to Hugging Face</li>
-<li>A UCI engine that plays the trained model, and an evaluation where two engines play on a real clock in the browser with every move classified</li>
-</ul>
-<p><i>Private repository</i></p>
+---
+
+<div>
+
+#### chengine
+
+*Current*
+
+Chess engine that plays like a human: a transformer that predicts the move a player of a given rating would make, how long they would think, and how the game ends.
+
+- Model: a transformer over 64 square tokens, 11 metadata tokens (ratings, clocks, castling, en passant) and the last moves with their think times. It outputs move probabilities with illegal moves masked, a think time, and win/draw/loss
+- Dataset pipeline in Go with my own board, move generator and PGN/SAN parser. It turns Lichess game databases into sharded binary training data with parallel workers and resume
+- Training on Modal GPUs, with experiment tracking in Aim on my own server over Tailscale, a learning-rate finder, and model upload to Hugging Face
+- A UCI engine that plays the trained model, and an evaluation where two engines play on a real clock in the browser with every move classified
+
+*Private repository*
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>Winch tension controller (SPRO4)</h4>
-<p><i>Jun 2026</i></p>
-<p>ATmega328p firmware that holds a set cable tension on a motor-driven winch.</p>
-<ul>
-<li>HX711 load cell read by bit-banging, motor current read on the ADC</li>
-<li>Kalman filter that combines the load-cell tension and the tension calculated from motor current</li>
-<li>Cascaded PID: current loop at 1 kHz in a timer interrupt, tension loop at 80 Hz, both with anti-windup</li>
-<li>Emergency stop on too much tension, motor timeout, UART telemetry</li>
-<li>Calibration mode to check the current sensor against a multimeter</li>
-</ul>
-<p><a href="https://github.com/vizn3r/spro4" target="_blank">Repository</a></p>
+---
+
+<div>
+
+#### Winch tension controller (SPRO4)
+
+*Jun 2026*
+
+ATmega328p firmware that holds a set cable tension on a motor-driven winch.
+
+- HX711 load cell read by bit-banging, motor current read on the ADC
+- Kalman filter that combines the load-cell tension and the tension calculated from motor current
+- Cascaded PID: current loop at 1 kHz in a timer interrupt, tension loop at 80 Hz, both with anti-windup
+- Emergency stop on too much tension, motor timeout, UART telemetry
+- Calibration mode to check the current sensor against a multimeter
+
+<a href="https://github.com/vizn3r/spro4" target="_blank">Repository</a>
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>RP2040 bare bones</h4>
-<p><i>Dec 2025</i></p>
-<p>RP2040 firmware written from the datasheet only, with no Pico SDK and no C standard library.</p>
-<ul>
-<li>My own stage-2 bootloader with a checksum tool, vector table and linker script. The code runs from QSPI flash (XIP)</li>
-<li>Unfinished USB CDC device written against the USB controller registers: enumeration, descriptors, control and bulk endpoints</li>
-<li>Register headers generated by a Python script</li>
-</ul>
-<p><a href="https://github.com/vizn3r/pico-bare-bones" target="_blank">Repository</a></p>
+---
+
+<div>
+
+#### RP2040 bare bones
+
+*Dec 2025*
+
+RP2040 firmware written from the datasheet only, with no Pico SDK and no C standard library.
+
+- My own stage-2 bootloader with a checksum tool, vector table and linker script. The code runs from QSPI flash (XIP)
+- Unfinished USB CDC device written against the USB controller registers: enumeration, descriptors, control and bulk endpoints
+- Register headers generated by a Python script
+
+<a href="https://github.com/vizn3r/pico-bare-bones" target="_blank">Repository</a>
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>NumaSync</h4>
-<p><i>Oct 2025</i></p>
-<p>Privacy-first cloud storage with peer-to-peer file transfer. Files are encrypted on the client, and the server only coordinates.</p>
-  
+---
+
+<div>
+
+#### NumaSync
+
+*Oct 2025*
+
+Privacy-first cloud storage with peer-to-peer file transfer. Files are encrypted on the client, and the server only coordinates.
+
 > This was just a big idea turning into a too big of a project for me to handle and develop myself, so now it remains just as a concept.
 
-<ul>
-<li>My own UDP transfer protocol, specified before implementation: 20-byte header with CRC32, three-way handshake, version negotiation, keepalive</li>
-<li>Reliability over UDP: sliding window of 8 packets, bitmap ACKs, immediate NACKs for gaps, and retransmit after 500 ms</li>
-<li>Designed so that a central server assigns sessions and sets up P2P hole-punching between client and storage daemons without seeing file contents</li>
-<li>Implemented so far: the transfer library in Go (sender, receiver, packet handling) with benchmarks</li>
-<li>Earlier version: a Go HTTP server with user accounts, chunked upload and share links</li>
-</ul>
-<p><i>Private repositories</i></p>
+- My own UDP transfer protocol, specified before implementation: 20-byte header with CRC32, three-way handshake, version negotiation, keepalive
+- Reliability over UDP: sliding window of 8 packets, bitmap ACKs, immediate NACKs for gaps, and retransmit after 500 ms
+- Designed so that a central server assigns sessions and sets up P2P hole-punching between client and storage daemons without seeing file contents
+- Implemented so far: the transfer library in Go (sender, receiver, packet handling) with benchmarks
+- Earlier version: a Go HTTP server with user accounts, chunked upload and share links
+
+*Private repositories*
+
 </div>
 
-<div style="border:1px solid #30363d;border-radius:6px;padding:16px;margin:16px 0;background:#0d1117">
-<h4>Robotic arm EVE (high school thesis)</h4>
-<p><i>Mar 2024</i></p>
-<p>Firmware and control client for a robotic arm driven by a Raspberry Pi, written in Go.</p>
-<ul>
-<li>Forward kinematics from a Denavit-Hartenberg table, using my own matrix library</li>
-<li>Stepper motors driven through step and direction pins on Linux GPIO (sysfs), microstepping modes set through shift registers, plus servo control</li>
-<li>My own command format (letter, index, arguments) and a small script format with variables, conditions, jumps and delays, for running motion sequences from files</li>
-<li>Control over HTTP and WebSocket. Runs as a systemd service</li>
-<li>Terminal client: menus, driving the arm with a game controller or keyboard over WebSocket, and uploading files to the arm</li>
-</ul>
-<p><a href="https://github.com/vizn3r/eve-firmware" target="_blank">eve-firmware</a>, <a href="https://github.com/vizn3r/eve-client" target="_blank">eve-client</a></p>
+---
+
+<div>
+
+#### Robotic arm EVE (high school thesis)
+
+*Mar 2024*
+
+Firmware and control client for a robotic arm driven by a Raspberry Pi, written in Go.
+
+- Forward kinematics from a Denavit-Hartenberg table, using my own matrix library
+- Stepper motors driven through step and direction pins on Linux GPIO (sysfs), microstepping modes set through shift registers, plus servo control
+- My own command format (letter, index, arguments) and a small script format with variables, conditions, jumps and delays, for running motion sequences from files
+- Control over HTTP and WebSocket. Runs as a systemd service
+- Terminal client: menus, driving the arm with a game controller or keyboard over WebSocket, and uploading files to the arm
+
+<a href="https://github.com/vizn3r/eve-firmware" target="_blank">eve-firmware</a>, <a href="https://github.com/vizn3r/eve-client" target="_blank">eve-client</a>
+
 </div>
 
-<h3>Other projects</h3>
+### Other projects
 
 | Project | What it is | When | Repo |
 |---|---|---|---|
-| SPRO1 timed car + Nextion library | ATmega328p car that drives set distances in set times, with an encoder and PID speed control; display library for Nextion screens | Dec 2024 | [spro1](https://github.com/vizn3r/spro1), [avr-libnextion](https://github.com/vizn3r/avr-libnextion) |
-| SPRO2 split-flap clock | ESP32-C3 main controller (ESP-IDF, FreeRTOS, NTP, weather API, Nextion display) and ATmega32u4 motor nodes on I2C with my own register protocol | Dec 2025 | [spro2](https://github.com/vizn3r/spro2) |
+| SPRO1 timed car + Nextion library | ATmega328p car that drives set distances in set times, with an encoder and PID speed control; display library for Nextion screens | Dec 2024 | <a href="https://github.com/vizn3r/spro1" target="_blank">spro1</a>, <a href="https://github.com/vizn3r/avr-libnextion" target="_blank">avr-libnextion</a> |
+| SPRO2 split-flap clock | ESP32-C3 main controller (ESP-IDF, FreeRTOS, NTP, weather API, Nextion display) and ATmega32u4 motor nodes on I2C with my own register protocol | Dec 2025 | <a href="https://github.com/vizn3r/spro2" target="_blank">spro2</a> |
 | Line follower PCB | My own line-follower PCB in two motor-driver versions (L298P, TC78H621FNG) | Jul 2022 | private repo |
 | computah | OS project for the i.MX6; tooling that turns the reference manual into register headers | Dec 2025 | private repo |
 | MicroMouse maze generator | GUI and CLI that generate mazes and check them against the MicroMouse rules | Mar 2026 | private repo |
-| go-lib | My shared Go modules: a logger and a config loader, used in my other Go projects | Current | [go-lib](https://github.com/vizn3r/go-lib) |
-| Terminal poker | Poker game in C with my own terminal UI: raw-mode input, resize handling, menus | Feb 2026 | [poker-thingy](https://github.com/vizn3r/poker-thingy) |
-| Sorting visualizer | C program that draws bubble, insertion and merge sort in the terminal step by step | Mar 2025 | [sorting-visualizer](https://github.com/vizn3r/sorting-visualizer) |
+| go-lib | My shared Go modules: a logger and a config loader, used in my other Go projects | Current | <a href="https://github.com/vizn3r/go-lib" target="_blank">go-lib</a> |
+| Terminal poker | Poker game in C with my own terminal UI: raw-mode input, resize handling, menus | Feb 2026 | <a href="https://github.com/vizn3r/poker-thingy" target="_blank">poker-thingy</a> |
+| Sorting visualizer | C program that draws bubble, insertion and merge sort in the terminal step by step | Mar 2025 | <a href="https://github.com/vizn3r/sorting-visualizer" target="_blank">sorting-visualizer</a> |
 
-<h3>Competitions</h3>
+### Competitions
 <p align="center">
   <a href="https://ecer.pria.at/" target="_blank">
     <img src="https://img.shields.io/badge/ECER%202022-4th_place-blueviolet?style=for-the-badge" alt="ECER 2022" />
@@ -133,7 +172,7 @@
   </a>
 </p>
 
-<h3>Socials</h3>
+### Socials
 <p align="center">
   <a href="https://github.com/vizn3r" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-vizn3r-181717?style=for-the-badge&logo=github" />
